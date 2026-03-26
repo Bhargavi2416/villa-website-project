@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luxury Villa</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Header */
+
+header{
+background:darkgreen;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Navigation - Flex */
+
+nav{
+display:flex;
+justify-content:center;
+background:#333;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+}
+
+nav a:hover{
+background:orange;
+}
+
+/* Hero Image */
+
+.hero img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+/* About Section */
+
+.about{
+padding:20px;
+text-align:center;
+}
+
+/* Facilities - Flex */
+
+.facilities{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.card{
+background:#f2f2f2;
+padding:20px;
+margin:10px;
+width:250px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+/* Gallery - Grid */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* Footer */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* Responsive Design */
+
+@media(max-width:900px){
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+nav{
+flex-direction:column;
+text-align:center;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.hero img{
+height:250px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Luxury Villa</h1>
+<p>Enjoy Your Dream Vacation</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Facilities</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6">
+</div>
+
+<section class="about">
+<h2>About Our Villa</h2>
+<p>
+Our luxury villa provides peaceful environment, beautiful garden,
+private swimming pool and comfortable rooms for your vacation.
+</p>
+</section>
+
+<h2 style="text-align:center">Facilities</h2>
+
+<div class="facilities">
+
+<div class="card">
+<h3>Swimming Pool</h3>
+<p>Private luxury swimming pool</p>
+</div>
+
+<div class="card">
+<h3>Free WiFi</h3>
+<p>High speed internet access</p>
+</div>
+
+<div class="card">
+<h3>Luxury Rooms</h3>
+<p>Fully furnished bedrooms</p>
+</div>
+
+<div class="card">
+<h3>Garden Area</h3>
+<p>Beautiful green surroundings</p>
+</div>
+
+</div>
+
+<h2 style="text-align:center">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<img src="https://images.unsplash.com/photo-1613977257363-707ba9348227">
+<img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d">
+<img src="https://images.unsplash.com/photo-1598228723793-52759bba239c">
+</div>
+
+<footer>
+<p>© 2026 Luxury Villa Website</p>
+</footer>
+
+</body>
+</html>
